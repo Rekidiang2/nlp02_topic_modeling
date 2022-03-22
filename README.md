@@ -1,5 +1,5 @@
 # Ssentiment Analysis
-Extract sand-up comedy transcript, calculate polarity and sensitivity the text to determine its sentiment (positive or negative or neutral)
+Topic modeling is a form of text mining, employing unsupervised and supervised statistical machine learning techniques to identify patterns in a corpus or large amount of unstructured text. It can take your huge collection of documents and group the words into clusters of words, identify topics, by a using process of similarity. [provalisresearch](https://provalisresearch.com/blog/topic-modeling/)
 
 <img src="./images/cover.png" width="1000" alt="photo cover" />
 
@@ -22,7 +22,7 @@ Extract sand-up comedy transcript, calculate polarity and sensitivity the text t
 #### analysis
 * ├── 1_data_preprocessing.ipynb
 * ├── 2_exploratory_data_analysis.ipynb
-* ├── 3_sentiment_analysis.ipynb
+* ├── 3_topic_modeling.ipynb
 
 #### figures
 * ├── contains graph and figures
@@ -51,8 +51,8 @@ Extract sand-up comedy transcript, calculate polarity and sensitivity the text t
 
 ### 3.1. CLONE PROJECT DIRECTORY
 
-+ $ git clonehttps://github.com/Rekidiang2/nlp01_sentiment_analysis.git
-+ $ cd nlp01_sentiment_analysis
++ $ git clonehttps://github.com/Rekidiang2/nlp02_sentiment_analysis.git
++ $ cd nlp02_sentiment_analysis
 
 ### 3.2. CREATE & ACTIVATE VIRTUAL ENVIRONMENT
 
@@ -60,20 +60,20 @@ Extract sand-up comedy transcript, calculate polarity and sensitivity the text t
 
 ##### (Windows) 
 + $ python -m venv nlp01_venv 
-+ $ nlp01_venv\Scripts\activate (<= Activate virtual Environment)
++ $ nlp02_venv\Scripts\activate (<= Activate virtual Environment)
 + $ deactivate (<= Deactivate virtual Environment)
 + $ pip install -r requirements.txt
 + Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name nlp01_venv --display-name "p01ml_kernel"
+  +  $ python -m ipykernel install --user --name nlp02_venv --display-name "nlp02_kernel"
 + $ jupyter notebook
 
 ##### (MasOS || LINUX)
-+ $ python3 -m venv nlp01_venv 
-+ $ source p01ml_venv/bin/activate (<= Activate virtual Environment)  
++ $ python3 -m venv nlp02_venv 
++ $ source nlp02_venv/bin/activate (<= Activate virtual Environment)  
 + $ deactivate (<= Deactivate virtual Environment)
 + $ pip install -r requirements.txt
 + Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name nlp01_venv --display-name "nlp01_kernel"
+  +  $ python -m ipykernel install --user --name nlp02_venv --display-name "nlp02_kernel"
 + $ jupyter notebook
 
 
@@ -81,16 +81,15 @@ Extract sand-up comedy transcript, calculate polarity and sensitivity the text t
 
 + Verify if you have conda installed ($conda --version) if not go to [anconda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) to download and install it
 
-+ $ conda create -n nlp01_venv python=3.7
-+ $ conda activate nlp01_venv (<= Activate virtual Environment)
++ $ conda create -n nlp02_venv python=3.7
++ $ conda activate nlp02_venv (<= Activate virtual Environment)
 + $ conda deactivate  (<= Deactivate virtual Environment)
 + Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name nlp01_venv --display-name "nlp01_kernel"
+  +  $ python -m ipykernel install --user --name nlp02_venv --display-name "nlp02_kernel"
 + $ jupyter notebook
-+ Go to Kernel -> Change kernel -> nlp01_kernel
++ Go to Kernel -> Change kernel -> nlp02_kernel
 + $ jupyter kernelspec list (<= list all ipykernel in your system)
-+ $ jupyter kernelspec uninstall nlp01_venv (<= Delete the ipykernel in your system)
-
++ $ jupyter kernelspec uninstall nlp02_venv (<= Delete the ipykernel in your system)
 
 #### Manage kernel
 + $ jupyter kernelspec list (<= list all ipykernel in your system)
