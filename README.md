@@ -1,4 +1,4 @@
-# Ssentiment Analysis
+# Topic Modeling
 Topic modeling is a form of text mining, employing unsupervised and supervised statistical machine learning techniques to identify patterns in a corpus or large amount of unstructured text. It can take your huge collection of documents and group the words into clusters of words, identify topics, by a using process of similarity. [provalisresearch](https://provalisresearch.com/blog/topic-modeling/)
 
 <img src="./images/cover.png" width="1000" alt="photo cover" />
